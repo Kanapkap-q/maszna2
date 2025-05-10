@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maszyna Losująca</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        #wynik {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Maszyna Losująca</h1>
+    <button onclick="losuj()">Losuj</button>
+    <div id="wynik"></div>
+
+    <script>
+        function losuj() {
+            const liczby = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Możesz zmienić te liczby na co chcesz
+            const wylosowanaLiczba = liczby[Math.floor(Math.random() * liczby.length)];
+            document.getElementById("wynik").innerText = "Wylosowano: " + wylosowanaLiczba;
+        }
+    </script>
+</body>
+</html>
